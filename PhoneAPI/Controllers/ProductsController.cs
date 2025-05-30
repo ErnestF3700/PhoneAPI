@@ -25,7 +25,7 @@ namespace PhoneAPI.Controllers
                 return NotFound();
             return Ok(product);
         }
-        [HttpPost("{id}")]
+        [HttpPost()]
         public ActionResult<Product> Create(CreateProductModel product)
         {
             var newProduct = new Product();
